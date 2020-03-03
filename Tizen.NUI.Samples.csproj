@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <RootNamespace>Tizen.NUI.Samples</RootNamespace>
+    <AssemblyName>Tizen.NUI.Samples</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>portable</DebugType>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Samples\AnimatedImageViewTest.cs" />
+    <Compile Remove="Samples\AnimatedVectorImageViewTest.cs" />
+    <Compile Remove="Samples\ButtonSample.cs" />
+    <Compile Remove="Samples\CheckBoxSample.cs" />
+    <Compile Remove="Samples\DropDownSample.cs" />
+    <Compile Remove="Samples\PopupSample.cs" />
+    <Compile Remove="Samples\RadioButtonSample.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--PackageReference Include="Tizen.NET" Version="8.0.0.15045" /-->
+    <PackageReference Include="Tizen.NET.Sdk" Version="1.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Tizen">
+      <HintPath>/home/jy/2019/dali/TizenFX/src/Tizen/bin/Release/netstandard2.0/Tizen.dll</HintPath>
+    </Reference>
+    <Reference Include="Tizen.Applications.Common">
+      <HintPath>/home/jy/2019/dali/TizenFX/src/Tizen.Applications.Common/bin/Release/netstandard2.0/Tizen.Applications.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Tizen.Applications.ComponentBased">
+      <HintPath>/home/jy/2019/dali/TizenFX/src/Tizen.Applications.Common/bin/Release/netstandard2.0/Tizen.Applications.ComponentBased.dll</HintPath>
+    </Reference>
+    <Reference Include="Tizen.Log">
+      <HintPath>/home/jy/2019/dali/TizenFX/src/Tizen.Log/bin/Release/netstandard2.0/Tizen.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="Tizen.NUI">
+      <HintPath>/home/jy/2019/dali/TizenFX/src/Tizen.NUI/bin/Release/netstandard2.0/Tizen.NUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Tizen.System.SystemSettings">
+      <HintPath>/home/jy/2019/dali/TizenFX/src/Tizen.System.SystemSettings/bin/Release/netstandard2.0/Tizen.System.SystemSettings.dll</HintPath>
+    </Reference>
+    <!--ProjectReference Include="../../../src/Tizen.NUI/Tizen.NUI.csproj" />
+    <ProjectReference Include="../../../src/Tizen.NUI.Components/Tizen.NUI.Components.csproj" /-->
+    <Reference Include="Tizen.NUI.Components">
+      <HintPath>/home/jy/2019/dali/TizenFX/src/Tizen.NUI.Components/bin/Release/netstandard2.0/Tizen.NUI.Components.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
+
