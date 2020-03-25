@@ -1,12 +1,10 @@
 using Tizen.NUI.Components;
-using Tizen.NUI.BaseComponents;
-using Tizen;
 
 namespace Tizen.NUI.Samples
 {
-    public class NUISampleApplication : NUIApplication
+    public class PressAnimationSampleApplication : NUIApplication
     {
-        public NUISampleApplication(int width, int hight) : base(new Size2D(width, hight), new Position2D(0, 0))
+        public PressAnimationSampleApplication() : base()
         {
         }
 
@@ -20,13 +18,14 @@ namespace Tizen.NUI.Samples
             var button = new Button(new RoundButtonStyle(), new Button.PressAnimationUIAdapter())
             {
                 Text = "Hello World!",
-                IconURL = "/home/jy/2019/dali/TizenFX/src/Tizen.NUI.Components/res/nui_component_default_switch_thumb_n.png",
+                IconURL = "/usr/share/dotnet.tizen/framework/res/nui_component_default_switch_thumb_n.png",
+
+                // Positioning it to the center
                 ParentOrigin = ParentOrigin.Center,
                 PivotPoint = PivotPoint.Center,
                 PositionUsesPivotPoint = true
             };
             window.Add(button);
         }
-
     }
 }
