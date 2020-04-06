@@ -14,17 +14,9 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>None</DebugType>
   </PropertyGroup>
-  <ItemGroup>
-    <Compile Remove="Samples\AnimatedImageViewTest.cs" />
-    <Compile Remove="Samples\AnimatedVectorImageViewTest.cs" />
-    <Compile Remove="Samples\ButtonSample.cs" />
-    <Compile Remove="Samples\CheckBoxSample.cs" />
-    <Compile Remove="Samples\DropDownSample.cs" />
-    <Compile Remove="Samples\PopupSample.cs" />
-    <Compile Remove="Samples\RadioButtonSample.cs" />
-  </ItemGroup>
 
   <ItemGroup>
+    <!--PackageReference Include="Tizen.NET" Version="8.0.0.15154" /-->
     <!--PackageReference Include="Tizen.NET" Version="8.0.0.15045" /-->
     <PackageReference Include="Tizen.NET.Sdk" Version="1.0.8" />
   </ItemGroup>
@@ -45,8 +37,12 @@
     <Reference Include="Tizen.System.SystemSettings">
       <HintPath>/home/jy/2019/dali/TizenFX/src/Tizen.System.SystemSettings/bin/Release/netstandard2.0/Tizen.System.SystemSettings.dll</HintPath>
     </Reference>
+    <Reference Include="Tizen.System.Information">
+      <HintPath>/home/jy/2019/dali/TizenFX/src/Tizen.System.Information/bin/Release/netstandard2.0/Tizen.System.Information.dll</HintPath>
+    </Reference>
     <ProjectReference Include="../TizenFX/src/Tizen.NUI/Tizen.NUI.csproj" />
     <ProjectReference Include="../TizenFX/src/Tizen.NUI.Components/Tizen.NUI.Components.csproj" />
+    <ProjectReference Include="../TizenFX/src/Tizen.NUI.Wearable/Tizen.NUI.Wearable.csproj" />
     <!--Reference Include="Tizen.NUI">
       <HintPath>/home/jy/2019/dali/TizenFX/src/Tizen.NUI/bin/Release/netstandard2.0/Tizen.NUI.dll</HintPath>
     </Reference>
